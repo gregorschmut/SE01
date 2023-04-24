@@ -1,0 +1,125 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #121212;
+}
+
+.gameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.beforeGameView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.playerSelectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.playerSelectButton {
+  cursor: pointer;
+  padding: 20px;
+  min-width: 90px;
+  min-height: 90px;
+  border: 7px solid #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerSelectButton:hover {
+  background: #3e3e3e;
+}
+
+.playerSelectButton:hover .playerSelectLabel {
+  color: #fff;
+}
+
+.playerSelectLabel {
+  color: #121212;
+  font-weight: 700;
+  margin: 0;
+  line-height: 32px;
+  font-size: 48px;
+}
+
+.inGameView {
+  display: none;
+  max-width: 500px;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #121212;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.statsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.playerEntry {
+  font-size: 24px;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 28px;
+  padding-left: 5px;
+}
+
+.pvpToggleButton {
+  padding: 8px 18px;
+  border: 1px solid #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pvpToggleButton:hover {
+  background-color: #3e3e3e;
+}
+
+.pvpToggleButton:hover .pvpToggleLabel {
+  color: #fff;
+}
+
+.pvpToggleLabel {
+  text-decoration: line-through;
+}
+
+.currentPlayerHeader {
+  display: none;
+}

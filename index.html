@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gregor Schmut TicTacToe</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="gameContainer">
+      <div class="beforeGameView">
+        <h1>⬇️ Select your sign tic tac toer ⬇️</h1>
+        <div class="playerSelectContainer">
+          <div class="xSelector playerSelectButton">
+            <p class="playerSelectLabel">X</p>
+          </div>
+          <div class="oSelector playerSelectButton">
+            <p class="playerSelectLabel">O</p>
+          </div>
+        </div>
+      </div>
+      <div class="inGameView">
+        <h1>Tic Tac Toe Round <span class="rounds">1</span></h1>
+        <p class="currentPlayerHeader">
+          Current Player: <span class="currentPlayerValue"></span>
+        </p>
+        <div class="board"></div>
+        <div class="statsContainer">
+          <p id="human" class="playerEntry"></p>
+          <p id="ai" class="playerEntry"></p>
+        </div>
+        <div class="pvpToggleButton">
+          <p class="pvpToggleLabel">Player vs Player</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
