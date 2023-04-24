@@ -306,11 +306,3 @@ function minimax(reboard, player) {
 
 // Actually init the game
 initTicTacToe();
-
-echo "# SE01_tictactoe" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/gregorschmut/SE01_tictactoe.git
-git push -u origin main
